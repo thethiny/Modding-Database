@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="21">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"No description"</Description>
+      <VariableType>String</VariableType>
+      <Length>35</Length>
+      <Unicode>1</Unicode>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>85d46fd9d0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"No description"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>32</ByteLength>
+      <Address>85D46FD9D0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"91 1F D1 EE 7F 19 D7 FD CC C7 50 EB 38 2E 0F 1F 3A ED 8A B4 2D 23 F3 45 60 D8 91 5A AC 4E 2A 81"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"No description"</Description>
+      <VariableType>String</VariableType>
+      <Length>33</Length>
+      <Unicode>0</Unicode>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>2519397DFB7</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"I can use the memory to see where the Check Fails (gives error)"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"If it was After all files were loaded, then there's a check"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"If it was during reading the name from the X64TOC, then that's what we must crack"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"Also, try to see if it goes back to loading the first area"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"No description"</Description>
+      <VariableType>String</VariableType>
+      <Length>24</Length>
+      <Unicode>0</Unicode>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>25193148FF9</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"No description"</Description>
+      <VariableType>String</VariableType>
+      <Length>24</Length>
+      <Unicode>0</Unicode>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>25193149029</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>Here, the AES Key has already been copied at same location as X64TOC is stored</Description>
+      <Address>7FF7DDD69E56</Address>
+      <ModuleName>MK10.exe</ModuleName>
+      <ModuleNameOffset>1449E56</ModuleNameOffset>
+      <Before>
+        <Byte>0C</Byte>
+        <Byte>45</Byte>
+        <Byte>89</Byte>
+        <Byte>43</Byte>
+        <Byte>2C</Byte>
+      </Before>
+      <Actual>
+        <Byte>4C</Byte>
+      </Actual>
+      <After>
+        <Byte>8D</Byte>
+        <Byte>1D</Byte>
+        <Byte>CF</Byte>
+        <Byte>E7</Byte>
+        <Byte>23</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>ARTTOOL was loaded into memory</Description>
+      <Address>7FF7DDD6811C</Address>
+      <ModuleName>MK10.exe</ModuleName>
+      <ModuleNameOffset>144811C</ModuleNameOffset>
+      <Before>
+        <Byte>B6</Byte>
+        <Byte>D0</Byte>
+        <Byte>41</Byte>
+        <Byte>8B</Byte>
+        <Byte>C0</Byte>
+      </Before>
+      <Actual>
+        <Byte>49</Byte>
+      </Actual>
+      <After>
+        <Byte>C1</Byte>
+        <Byte>EA</Byte>
+        <Byte>08</Byte>
+        <Byte>41</Byte>
+        <Byte>8B</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>It is still copying the contents from the X64TOC to the memory.</Description>
+      <Address>7FF7DDD67B3A</Address>
+      <ModuleName>MK10.exe</ModuleName>
+      <ModuleNameOffset>1447B3A</ModuleNameOffset>
+      <Before>
+        <Byte>C7</Byte>
+        <Byte>45</Byte>
+        <Byte>33</Byte>
+        <Byte>4E</Byte>
+        <Byte>44</Byte>
+      </Before>
+      <Actual>
+        <Byte>48</Byte>
+      </Actual>
+      <After>
+        <Byte>C1</Byte>
+        <Byte>E8</Byte>
+        <Byte>08</Byte>
+        <Byte>0F</Byte>
+        <Byte>B6</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+  <Comments>Info about this table:
+</Comments>
+</CheatTable>
