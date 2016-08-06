@@ -1,0 +1,36 @@
+alloc(newmem,2048,"MK10.exe"+1F1450) 
+label(returnhere)
+label(originalcode)
+label(exit)
+label(playerA)
+//Player1 Infinite Health
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+push rax
+mov ax, 0770
+cmp bx, ax
+jz playerA
+mov ax, D510
+cmp bx, ax
+pop rax
+jmp originalcode
+playerA:
+mov [rbx+000008D8], 3F800000
+pop rax
+jmp returnhere
+
+
+originalcode:
+movss [rbx+000008D8], xmm6
+
+exit:
+jmp returnhere
+
+"MK10.exe"+1F1450:
+jmp newmem
+nop
+nop
+nop
+returnhere:
+

@@ -1,0 +1,22 @@
+alloc(newmem,2048,"MSVCR110.dll"+3724A) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+//mov R12, R9
+
+originalcode:
+sub r8,rcx
+mov al,[r8+r11]
+
+exit:
+jmp returnhere
+
+"MSVCR110.dll"+3724A:
+jmp newmem
+nop
+nop
+returnhere:
+

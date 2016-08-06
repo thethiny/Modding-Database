@@ -1,0 +1,19 @@
+alloc(newmem,2048,"MK10.exe"+3E1A3F) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+originalcode:
+nop
+
+exit:
+jmp returnhere
+
+"MK10.exe"+3E1A3F:
+jmp newmem
+nop
+returnhere:
+
