@@ -1,0 +1,107 @@
+[ENABLE]
+alloc(newmem,2048,"MK10.exe"+13FF5C4)
+alloc(DATA,128)
+label(returnhere)
+label(originalcode)
+label(exit)
+label(file)
+label(BOOL)
+label(X0Backup)
+
+
+DATA+110:
+BOOL:
+dd 424F4F4C
+
+DATA+100:
+X0Backup:
+DB ?
+
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+movaps [X0Backup],xmm0 //BACKUP XMM0
+movaps [DATA],xmm0
+movaps xmm1,[rax-70]
+movaps [DATA+10],xmm1
+//Expand Max Charachter Size
+movaps xmm0,[rax-60]
+movaps [DATA+20],xmm0
+movaps xmm1,[rax-50]
+movaps [DATA+30],xmm1
+movaps xmm0,[rax-40]
+movaps [DATA+40],xmm0
+movaps xmm1,[rax-30]
+movaps [DATA+50],xmm1
+movaps xmm0,[rax-20]
+movaps [DATA+60],xmm0
+movaps xmm1,[rax-10]
+movaps [DATA+70],xmm1
+
+cmp [DATA],'..\A'
+jnz originalcode
+cmp [DATA+4],'sset'
+jnz originalcode
+cmp Byte Ptr [DATA+8],'\'
+jnz originalcode
+mov [DATA+3],'DLCm'
+mov Word Ptr [DATA+7],'k\'
+
+call file //Try to open ..\Loadr\YourFile
+cmp [BOOL],1
+jnz originalcode
+
+movaps xmm0,[DATA]
+movaps xmm1,[DATA+10]
+movaps [rdx-80],xmm0
+movaps [rdx-70],xmm1
+movaps xmm0,[DATA+20]
+movaps xmm1,[DATA+30]
+movaps [rdx-60],xmm0
+movaps [rdx-50],xmm1
+movaps xmm0,[DATA+40]
+movaps xmm1,[DATA+50]
+movaps [rdx-40],xmm0
+movaps [rdx-30],xmm1
+movaps xmm0,[DATA+60]
+movaps xmm1,[DATA+70]
+movaps [rdx-20],xmm0
+movaps [rdx-10],xmm1
+jmp "MK10.exe"+13FF600
+
+file:
+  push rcx //Backup All 3 Registers
+  push rax
+  push rdx
+  sub rsp,20
+  lea rcx,[DATA+3]
+  call SHLWAPI.PathFileExistsA
+  mov [BOOL],eax
+  add rsp,20
+  pop rdx
+  pop rax
+  pop rcx
+  ret
+
+
+originalcode:
+movaps xmm0,[X0Backup] //RESTORE XMM0
+movaps [rdx-80],xmm0
+movaps xmm1,[rax-70]
+
+exit:
+jmp returnhere
+
+"MK10.exe"+13FF5C4:
+jmp newmem
+nop
+nop
+nop
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+dealloc(DATA)
+"MK10.exe"+13FF5C4:
+movaps [rdx-80],xmm0
+movaps xmm1,[rax-70]
