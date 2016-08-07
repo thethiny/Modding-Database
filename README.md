@@ -1,7 +1,7 @@
 # Mortal Kombat X
 
 ## C++
-##### [C++ Library](C%2B%2BLibrary)
+##### C++ Library
 ##### DLC Manager
 ##### ObjRef Creator
 ##### Package Adjustor/Offset Fixer
