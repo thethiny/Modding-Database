@@ -1,6 +1,6 @@
 # Mortal Kombat X
--C++
 
+# C++
 C++ Library
 
 DLC Manager
@@ -15,14 +15,12 @@ Story Kombat Pack
 
 
 
--ASM/Cheat Engine
-
+# ASM/Cheat Engine
 Mod Loader
 
 Cheats
 
 
 
--Files/Packages
-
+# Files/Packages
 Expanded UI Files
