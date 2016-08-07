@@ -1,26 +1,16 @@
 # Mortal Kombat X
 
-# C++
-C++ Library
+## C++
+### C++ Library
+### DLC Manager
+### ObjRef Creator
+### Package Adjustor/Offset Fixer
+### Package Appendor/Repacker
+### Story Kombat Pack
 
-DLC Manager
+## ASM/Cheat Engine
+### Mod Loader
+### Cheats
 
-ObjRef Creator
-
-Package Adjustor/Offset Fixer
-
-Package Appendor/Repacker
-
-Story Kombat Pack
-
-
-
-# ASM/Cheat Engine
-Mod Loader
-
-Cheats
-
-
-
-# Files/Packages
-Expanded UI Files
+## Files/Packages
+### Expanded UI Files
