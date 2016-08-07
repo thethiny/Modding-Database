@@ -89,7 +89,7 @@ int main()
         cout<<"\n    Size: "<<hex<<"0x"<<fsize[i];
 
         //Print Details
-        outDetails<<uppercase<<setw(4)<<i<<" "<<setw(8)<<hex<<floc[i]<<" "<<setw(8)<<hex<<fsize[i]<<" "<<fname[i]<<endl;
+        outDetails<<uppercase<<setw(4)<<i<<" "<<setw(8)<<hex<<floc[i]<<" "<<setw(8)<<hex<<fsize[i]<<" "<<fname[i];//<<endl;
 
         //Extension Handling
         read(fin,H); //Get Extension
@@ -110,6 +110,7 @@ int main()
         }
 
         discard(fin,2);
+        outDetails<<"."<<fext[i]<<endl;
 
     }
     cout<<"\nLoading Data done...\nExtracting, Please Wait...\n";
