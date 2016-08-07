@@ -1,2 +1,0 @@
-# Killer Instinct
-.pak Unpacker
