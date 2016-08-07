@@ -1,4 +1,4 @@
-# Modding-Database
+# thethiny's Mod Tools
 ### Please select the branch you desire:
 
 - Mortal Kombat X
