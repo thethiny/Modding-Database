@@ -8,9 +8,9 @@
 ##### [Package Appendor/Repacker](Mortal%20Kombat%20X/Package%20Appendor-Repacker)
 
 
-## [ASM/Cheat Engine](Mortal-Kombat-X/Mortal%20Kombat%20X/CheatEngine)
+## ASM/Cheat Engine
 ##### [Mod Loader](Mortal%20Kombat%20X/CheatEngine/Skin%20Loader)
-##### Cheats
+##### [Cheats](Mortal%20Kombat%20X/CheatEngine)
 
 ## Files/Packages
 ##### [Story Kombat Pack](Mortal%20Kombat%20X/Story%20Kombat%20Pack)
