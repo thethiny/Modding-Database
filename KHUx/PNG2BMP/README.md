@@ -8,5 +8,7 @@
 
 
 SPECIAL THANKS TO Luigi Auriemma (me@aluigi.org) for OFFZIP
+
 http://aluigi.altervista.org/mytoolz.htm
-SPECIAL THANKS TO /u/ebaroni83 for understanding the png format
+
+SPECIAL THANKS TO [/u/ebaroni83](https://www.reddit.com/user/ebaroni83) for understanding the png format
