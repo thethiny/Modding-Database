@@ -21,7 +21,7 @@ unsigned int chartoint2(unsigned char* c)
 //args[0] File Name, args[1] Folder to Repack
 int main(int argc, const char* args[])
 {
-    //ifstream fin(args[1], ios::binary | ios::ate);
+    int location = 0;
     string OPENNow = args[1];
     OPENNow += ".txt";
     string openName="", openName2="";
@@ -52,9 +52,13 @@ int main(int argc, const char* args[])
 
         cout<<"Size: "<<finBGAD.tellg()<<" bytes."<<endl;
         cout<<"Name Length: "<<openName2.length()<<" characters."<<endl;
+        cout<<"Offset: "<<hex<<uppercase<<location<<endl;
+        cout<<dec;
 
         name = new unsigned char [openName2.length()];
         data = new unsigned char [finBGAD.tellg()];
+
+        location += 0x18 + finBGAD.tellg() + openName2.length(); //Offset of new file.
 
         for (int i = 0; i < openName2.length(); i++)
             name[i] = (unsigned char)(openName2[i]);
@@ -154,8 +158,11 @@ int main(int argc, const char* args[])
             fout<<data[i];
 
         finBGAD.close();
-        cout<<"Done!\n";
+        cout<<"Done!\n\n";
     }
+
+    //DEBUG
+    cout<<hex<<"File End: 0x"<<location<<endl;
 
     fin.close();
     fout.close();
