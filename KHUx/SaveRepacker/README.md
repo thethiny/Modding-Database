@@ -1,1 +1,0 @@
-Repacks your saves, use Files2BGAD and create a .gif file, it's safer.
