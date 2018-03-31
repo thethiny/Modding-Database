@@ -67,23 +67,25 @@ for link in links:
 
         source = ""
         #source = site.find_elements_by_class_name("source")
-        try:
-            source = site.find("div", class_="source").text
-        except:
+        source = site.find("div", class_="source")
+        if source is not None:
+            source = source.text
+        else:
             print("Couldn't find source!\n")
-            os.rmdir(name)
-            continue
+            source = "لا يوجد"
 
         #print("\nSource\n",source)
         file.write("\nSource\n" + source)
 
         file.write("\nBody")
         #print("\nBody")
-        body = site.find("div", class_="article-body").text
+        body = site.find("div", class_="article-body")
         if body is None:
             print("Couldn't find body!\n")
-            os.rmdir(name)
+            os.remove(name)
             continue
+        else:
+            body = body.text
         #print(body)
         file.write(body)
         #print("Body Scraped into",name)
