@@ -1,0 +1,131 @@
+# depslib dependency file v1.0
+1519117481 source:c:\users\nahme\desktop\opengl\test.cpp
+	<iostream>
+	<windows.h>
+	<math.h>
+	<gl/Gl.h>
+	<gl/glut.h>
+	<cmath>
+
+1426332840 c:\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1437540342 c:\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1524353797 source:f:\ridhwan\h.w\uni\year 4\sem 2\cg\assignment 3\main.cpp
+	<iostream>
+	<windows.h>
+	<math.h>
+	<gl/Gl.h>
+	<gl/glut.h>
+	<gl/freeglut.h>
+	<cmath>
+	<sstream>
+	<iomanip>
+
+1426332840 f:\ridhwan\h.w\uni\year 4\sem 2\cg\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1437540342 f:\ridhwan\h.w\uni\year 4\sem 2\cg\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1426332840 f:\ridhwan\h.w\uni\year 4\sem 2\cg\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1426332840 f:\ridhwan\h.w\uni\year 4\sem 2\cg\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1478065552 f:\ridhwan\h.w\uni\year 4\sem 2\cg\freeglut\include\vector.h
+	<iostream>
+	<cmath>
+
+1524782216 source:f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\mylibrary.cpp
+	"myLibrary.h"
+
+1524520664 source:f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\main.cpp
+	"myLibrary.h"
+
+1524444540 f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\mylibrary.cpp
+	"myLibrary.h"
+
+1524792754 f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\mylibrary.h
+	"mainMenu.h"
+	<iostream>
+	<windows.h>
+	<math.h>
+	<gl/Gl.h>
+	<gl/glut.h>
+	<gl/freeglut.h>
+	<cmath>
+	<sstream>
+	<iomanip>
+
+1524444526 f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\mainmenu.cpp
+	"myLibrary.h"
+
+1525284396 source:f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\mainmenu.cpp
+	"mainMenu.h"
+
+1524781746 f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\mainmenu.h
+	"myLibrary.h"
+	"circles.h"
+	"bezier.h"
+	"tween.h"
+	"clip.h"
+	"mirror.h"
+	"reflect.h"
+
+1524517271 f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\circles.h
+	"myLibrary.h"
+
+1524658060 source:f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\circles.cpp
+	"circles.h"
+
+1524663161 f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\bezier.h
+	"mainMenu.h"
+
+1525285190 source:f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\bezier.cpp
+	"bezier.h"
+
+1525282719 source:f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\mirror.cpp
+	"mirror.h"
+
+1524688342 f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\clip.h
+	"mainMenu.h"
+
+1524695586 source:f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\clip.cpp
+	"clip.h"
+
+1524697626 f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\tween.h
+	"mainMenu.h"
+
+1524701478 source:f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\tween.cpp
+	"tween.h"
+
+1525209022 f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\reflect.h
+	"mainMenu.h"
+
+1525283118 source:f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\reflect.cpp
+	"reflect.h"
+
+1524792884 f:\ridhwan\h.w\uni\year 4\sem 2\cg\project\mirror.h
+	"mainMenu.h"
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OpenGL" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/OpenGL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/OpenGL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../freeglut/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lOpenGL32 -lglu32 -lfreeglut" />
+			<Add directory="../freeglut/lib" />
+		</Linker>
+		<Unit filename="bezier.cpp" />
+		<Unit filename="bezier.h" />
+		<Unit filename="circles.cpp" />
+		<Unit filename="circles.h" />
+		<Unit filename="clip.cpp" />
+		<Unit filename="clip.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="mainMenu.cpp" />
+		<Unit filename="mainMenu.h" />
+		<Unit filename="mirror.cpp" />
+		<Unit filename="mirror.h" />
+		<Unit filename="myLibrary.cpp" />
+		<Unit filename="myLibrary.h" />
+		<Unit filename="reflect.cpp" />
+		<Unit filename="reflect.h" />
+		<Unit filename="tween.cpp" />
+		<Unit filename="tween.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
